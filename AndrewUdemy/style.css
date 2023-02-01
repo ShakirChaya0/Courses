@@ -1,0 +1,9 @@
+body {
+	background-image: url(https://media.istockphoto.com/id/1365141371/es/foto/programador-trabajando-en-c%C3%B3digo-inform%C3%A1tico-javascript-con-pantalla-virtual-tecnolog%C3%ADa-de.jpg?s=1024x1024&w=is&k=20&c=bOCmOJTLxDGji3W0x2C8LWeNs2RJE16UM3d729IQRWo=)
+;	background-size: cover;
+}
+h1 {
+ text-align: center;
+ color: white;
+ border: 3px dashed yellow ;
+}
