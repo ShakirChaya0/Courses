@@ -1,0 +1,37 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url("../00.Assests/header.jpg") no-repeat center center fixed; 
+  background-size: cover;
+}
+hr{
+    border-color: #ee4b08;
+    border-width: 3px;
+    max-width: 65px;
+}
+.buffer {
+    height: 10rem;
+}
+h1 { 
+    font-size: 3rem;
+    color: #e2dbdb;
+}
+.btn {
+    font-weight: 700;
+    border-radius: 300px;
+}
+.btn-primary {
+    background-color: #ff7f07;
+    border-color: blue;
+}
+.btn-primary:hover {
+    background-color: #ee4b08;
+    border-color: #ee4b08;
+    border-width: 5px;
+    
+}
+.btn-xl {
+    padding: 1rem 2rem;
+}
