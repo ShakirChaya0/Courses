@@ -1,0 +1,15 @@
+/* Estructura de CSS:
+Selector {
+  atributo: valor;
+} */
+h1 {
+  background-color: black;
+}
+/* 
+Selectores Básicos:
+1) Etiquetas - Son elementos html
+2) Identificadores - atributo id (#id)
+3) Clases - atributo class (.class)
+
+
+*/

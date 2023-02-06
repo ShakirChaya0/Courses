@@ -3,12 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <meta
-      name="description"
-      content="Este es mi primer sitio web de html con JonMircha"
-    />
+    <title>Learning Html</title>
+    <meta name="description" content="Este es mi primer sitio web de html con JonMircha"/>
+    <link rel="canonical" href="https://tudominio.com/la-url-canonica">
+    <link rel="icon" href="img/...">
+    <link rel="apple-touch-icon" href="img/...">
+    <meta name="theme-color" content="#FF6600">
+    <meta property="pg:title" content="Learning Html">
+    <meta property="og:image" content="https://tudominio.com/img/...">
+    <meta propertt="og:url" content="https://tudominio.com/index.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@...">
   </head>
+
 <body>
     <h2 id="inicio">Aprendiendo HTML</h2>
     <p>Hola, escribiendo un documento con JonMircha</p>
@@ -283,7 +290,77 @@ root.render(<HelloMessage name="Taylor" />);
     <br>
     <a href="index.html#inicio">⬆️</a>
     <br><br><br><br>
+    <h3>Selects, Radios y Checkbox</h3>
+    <form>
+      <p>Elige tu idioma:</p>
+      <select name="idioma" required>
+        <option value="">Elige una opción</option>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="it">Italiano</option>
+        <option value="pt">Portugués</option>
+      </select>
+      <p>Elige tu lenguaje de programación favorito:</p>
+
+      <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+      <label for="radio-js">JavaScript</label>
+
+      <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
+      <label for="radio-py">Phyton</label>
+
+      <input type="radio" name="lenguaje" id="radio-php" value="php">
+      <label for="radio-php">PHP</label>
+      <p>Elige tus intereses:</p>
+      <label>
+        <input type="checkbox" name="intereses" value="deportes">
+        Deportes
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="finanzas">
+        Finanzas
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="salud">
+        Salud
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="politica">
+        Politica
+      </label>
+      <label>
+        <input type="checkbox" name="intereses" value="ecologia">
+        Ecología
+      </label>
+
+      <input type="submit">
+      <input type="reset">
+
+    </form>
+    <br>
+    <h3>Formulario de contacto</h3>
+    <form action="https://formsubmit.co/shakirchaya.dev@gmail.com" method="post">
+      <input type="name" placeholder="Escribe tu nombre" pattern="  - ^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre solo acepta letras y espacios en blanco" required>
+      <br>
+      <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo invalido" required>
+      <br>
+      <textarea name="comentarios" cols="30" rows="10" required></textarea>
+      <br>
+      <input type="submit">
+    </form>
+    <hr>
+    <h2>Data Attributes</h2>
+    <ul>
+      <li data-id="1" data-name="spring">Primavera</li>
+      <li data-id="2" data-name="summer">Verano</li>
+      <li data-id="3" data-name="autumm">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <hr>
+    <h2>Accesibilidad Web</h2>
     
+
+
 
 
   
