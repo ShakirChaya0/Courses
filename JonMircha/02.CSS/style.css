@@ -4,12 +4,100 @@ Selector {
 } */
 h1 {
   background-color: black;
+  text-align: center;
+}
+html {
+  scroll-behavior: auto;
 }
 /* 
 Selectores Básicos:
 1) Etiquetas - Son elementos html
 2) Identificadores - atributo id (#id)
 3) Clases - atributo class (.class)
-
-
 */
+p {
+  color: blue;
+}
+/* Dar estilos con id se considera un AntiPatron */
+#parrafo-dos {
+  background-color: skyblue;
+}
+/* Dar estilos con clases nos permite reutilizar nuestro código css*/
+.text-32 {
+  font-size: 32px;
+}
+.text-20 {
+  font-size: 20px;
+}
+.bg-skyblue {
+  background-color: skyblue;
+}
+.bg-steelblue {
+  background-color: steelblue;
+}
+.text-white {
+  color: white;
+}
+.hijos-directos > li {
+  background-color: teal;
+}
+.hijos-descendientes b {
+  background-color: blueviolet;
+}
+.hermanos-general ~ li {
+  background-color: brown;
+}
+.hermanos-adyacentes + li {
+  background-color: brown;
+}
+.selectores-atributos a[href] {
+  color: orangered;
+}
+/* Selectores de atributos */
+.selectores-atributos a[target="_blank"] {
+  font-weight: bold;
+}
+/* El comodin del * aplica el estilo si contiene la palabra en cuestión */
+.selectores-atributos a[href*="jonmircha"] {
+  font-size: 24px;
+}
+/* El comodin del ^ aplica el estilo si contiene el texto en cuestión al inicio*/
+.selectores-atributos a[href^="http:"] {
+  text-decoration: none;
+}
+/* El comodin del $ aplica el estilo si contiene el texto en cuestión al final*/
+.selectores-atributos a[href$=".com"] {
+  text-decoration: none;
+  background-color: black;
+}
+/* El comodin del $ aplica el estilo si contiene el texto en cuestión en una lista separada pór espacios*/
+.selectores-atributos a[class~="cursos"] {
+  text-decoration: none;
+  background-color: midnightblue;
+}
+/* El comodin del | aplica el estilo si contiene el texto en cuestión en una lista separada pór espacios y que después del texto en cuestión puede venir un guión medio -*/
+.selectores-atributos a[class|="menu"] {
+  font-style: italic;
+}
+/* Selector universal */
+* {
+  font-family: sans-serif;
+}
+.selector-universal * {
+  font-size: 24px;
+}
+/* Pseudoclases - Dan estilos dependiendo del contexto, posición o estado del elemento 
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes */
+
+.form-pseudoclases *:required {
+  border-color: yellow;
+}
+.form-pseudoclases *:valid {
+  border-color: green;
+}
+.form-pseudoclases *:invalid {
+  border-color: red;
+}
+.form-pseudoclases *:focus {
+  background-color: skyblue;
+}

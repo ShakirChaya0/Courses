@@ -12,14 +12,142 @@
       }
     </style>
   </head>
+
   <body>
-    <h1>Aprendiendo CSS</h1>
-    <p style="font-weight: bold; color: blue">Cascading Style Sheet</p>
-    <br />
-    <h2>Temario del curso</h2>
-    <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </ul>
+    <article id="aprendiendo-css">
+      <h1>Aprendiendo CSS</h1>
+      <p style="font-weight: bold; color: blue">Cascading Style Sheet</p>
+      <br />
+      <h2>Temario del curso</h2>
+      <ul>
+        <li><a href="index.html#selectores-basicos">Selectores Básicos</a></li>
+        <li>
+          <a href="index.html#selectores-avanzados">Selectores Avanzados</a>
+        </li>
+        <li><a href="index.html#pseudoclases">Selectores Pseudoclases</a></li>
+      </ul>
+    </article>
+    <hr />
+    <article id="selectores-basicos">
+      <h2>Selectores Básicos</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati
+        eaque aliquid a deserunt provident veritatis, voluptas ipsum! Animi
+        magnam ad non cumque corporis suscipit dolore reiciendis! Est, quae
+        dicta.
+      </p>
+      <p id="parrafo-dos">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati
+        eaque aliquid a deserunt provident veritatis, voluptas ipsum! Animi
+        magnam ad non cumque corporis suscipit dolore reiciendis! Est, quae
+        dicta.
+      </p>
+      <p class="text-32 bg-skyblue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati
+        eaque aliquid a deserunt provident veritatis, voluptas ipsum! Animi
+        magnam ad non cumque corporis suscipit dolore reiciendis! Est, quae
+        dicta.
+      </p>
+      <p class="text-20 bg-steelblue text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa obcaecati
+        eaque aliquid a deserunt provident veritatis, voluptas ipsum! Animi
+        magnam ad non cumque corporis suscipit dolore reiciendis! Est, quae
+        dicta.
+      </p>
+      <a href="index.html#aprendiendo-css">👆</a>
+    </article>
+
+    <article id="selectores-avanzados">
+      <h2>Selectores Avanzados</h2>
+      <h3>Selectores de hijos</h3>
+      <h4>Selectores de hijos directos</h4>
+      <ul class="hijos-directos">
+        <li><b>Primavera</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+      </ul>
+      <h4>Selectores de hijos descendientes</h4>
+      <ul class="hijos-descendientes">
+        <li><b>Primavera</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+      </ul>
+      <h3>Selectores de hermanos</h3>
+      <h4>Selector de hermanos (en general)</h4>
+      <ul>
+        <li><b>Primavera</b></li>
+        <li class="hermanos-general"><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+      </ul>
+      <h4>Selector de hermanos adyacentes</h4>
+      <ul>
+        <li><b>Primavera</b></li>
+        <li class="hermanos-adyacentes"><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+      </ul>
+      <h3>Selectores de Atributos</h3>
+      <nav class="selectores-atributos">
+        <ul>
+          <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+          <li>
+            <a
+              class="menu item cursos button"
+              href="https://jonmircha.com/cursos"
+              target="_blank"
+              >Cursos</a
+            >
+          </li>
+          <li>
+            <a
+              class="menu-items blog button"
+              href="https://jonmircha.com/Blog"
+              target="_blank"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a href="http://jonmircha./Mentoria" target="_blank">Mentoria</a>
+          </li>
+          <li><a href="http://jonmircha.com/Hola" target="_blank">Hola</a></li>
+        </ul>
+      </nav>
+      <h3>Selector universal (*)</h3>
+      <ul class="selector-universal">
+        <li><b>Primavera</b></li>
+        <li><b>Verano</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+      </ul>
+      <a href="index.html#aprendiendo-css">👆</a>
+      <hr />
+    </article>
+    <article id="pseudoclases">
+      <h2>Pseudoclases</h2>
+      <form class="form-pseudoclases">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="correo"
+          placeholder="Escribe tu correo"
+          required
+        />
+        <br />
+        <input type="submit " />
+      </form>
+      <a href="index.html#aprendiendo-css">👆</a>
+      <hr />
+    </article>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>
