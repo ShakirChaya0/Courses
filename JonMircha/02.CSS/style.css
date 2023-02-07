@@ -5,6 +5,7 @@ Selector {
 h1 {
   background-color: black;
   text-align: center;
+  color: blue;
 }
 html {
   scroll-behavior: auto;
@@ -15,9 +16,7 @@ Selectores Básicos:
 2) Identificadores - atributo id (#id)
 3) Clases - atributo class (.class)
 */
-p {
-  color: blue;
-}
+
 /* Dar estilos con id se considera un AntiPatron */
 #parrafo-dos {
   background-color: skyblue;
@@ -100,4 +99,103 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes */
 }
 .form-pseudoclases *:focus {
   background-color: skyblue;
+}
+.form-pseudoclases *:disabled {
+  background-color: skyblue;
+}
+.menu-pseudoclases a:visited {
+  color: green;
+}
+.menu-pseudoclases a:hover {
+  color: orange;
+}
+.p-pseudoclases:hover {
+  font-size: 20px;
+}
+#aprendiendo-css:target {
+  background-color: aqua;
+}
+.lista-pseudoclases li:first-child {
+  color: violet;
+}
+.lista-pseudoclases li:last-child {
+  color: rgb(7, 243, 137);
+}
+.lista-pseudoclases li:nth-child(3) {
+  color: rgb(55, 30, 197);
+}
+.lista-pseudoclases li:nth-child(4n) {
+  font-size: 20px;
+}
+.lista-pseudoclases li:nth-child(3n + 1) {
+  font-weight: bold;
+}
+.lista-pseudoclases li:nth-child(even) {
+  background-color: rgb(34, 90, 194);
+}
+.lista-pseudoclases li:nth-child(odd) {
+  background-color: rgb(255, 251, 0);
+}
+.articulo-pseudoclases p:first-of-type {
+  background-color: pink;
+}
+.articulo-pseudoclases p:last-of-type {
+  background-color: rgb(141, 21, 21);
+}
+.articulo-pseudoclases p:nth-of-type(3) {
+  background-color: rgb(25, 141, 21);
+}
+.articulo-pseudoclases *:not(p, li, button) {
+  background-color: beige;
+}
+/* Pseudoelementos - Dan estilos a partes específicas de un elemento, se usa el :: para diferenciarlos de las pseudoclases
+https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements */
+
+.saga-geminis::before {
+  content: "🤼";
+}
+.saga-geminis::after {
+  content: "♓";
+}
+.saga-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+.saga-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+.p-pseudoelementos::first-letter {
+  font-size: 32px;
+  font-weight: bold;
+}
+.p-pseudoelementos::first-line {
+  color: coral;
+}
+.p-pseudoelementos::selection {
+  color: greenyellow;
+  background-color: black;
+}
+.input-pseudoelementos::placeholder {
+  color: green;
+}
+.form-agrupar-selectores input {
+  color: blueviolet;
+  background-color: blueviolet;
+}
+.form-agrupar-selectores > ::placeholder {
+  color: cyan;
+}
+
+/* Agrupar Selectores */
+.form-agrupar-selectores input[type="text"],
+.form-agrupar-selectores input[type="email"],
+.form-agrupar-selectores textarea {
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
 }
