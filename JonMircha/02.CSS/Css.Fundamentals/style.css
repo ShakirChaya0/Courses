@@ -199,3 +199,39 @@ https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements */
   display: block;
   width: 300px;
 }
+/*  Algoritmo de CSS:
+1- Cascada
+2- Especifidad
+3- Herencia
+ */
+blockquote#cita-marco.cita-marco {
+  background-color: lightsteelblue;
+}
+blockquote {
+  background-color: burlywood;
+}
+#cita-marco {
+  background-color: lightgreen;
+}
+blockquote.cita-marco {
+  background-color: tomato;
+}
+.cita-marco {
+  background-color: cornflowerblue;
+}
+blockquote#cita-marco {
+  background-color: lightsalmon;
+}
+.cita-marco {
+  background-color: mediumaquamarine !important;
+  font-size: 25px;
+  border-style: dashed;
+  border-color: red;
+}
+.cita-marco cite {
+  background-color: pink;
+  background-color: inherit;
+  font-size: initial;
+  border-style: inherit;
+  border-color: inherit;
+}

@@ -1,0 +1,112 @@
+/* 
+Modelo de Caja: Es la forma en la que CSS ve a los elementos HTML. Los ve como si fueran cajas con las siguientes propiedas: 
+1- El content. El contenido  
+2- El Border. Lo que delemita 
+3- El padding. Distancias internas
+4- El margin. Distancias Externas
+ Sus partes son:
+A) Top 
+B) Right
+C) Botton
+D) Left
+ */
+body {
+  margin: 0;
+}
+h1 {
+  width: 400px;
+  height: 200px;
+
+  border-color: aqua;
+  border-width: thick;
+  border-style: solid;
+  border: 2px dashed blue;
+  border-top-color: burlywood;
+}
+
+.caja-1,
+.caja-2 {
+  background-color: chocolate;
+  border: 3px solid orange;
+  padding: 20px;
+  margin: 20px;
+}
+.caja-linea,
+.caja-bloque {
+  background-color: darkcyan;
+  color: whitesmoke;
+  width: 500px;
+  height: 250px;
+  border: thick dashed black;
+  padding: 16px;
+  margin: 32px;
+}
+/*
+Propiedad Display:
+Inline
+Block
+Inline-block
+Flex
+Grid
+None
+Table
+List-item
+*/
+.caja-bloque {
+}
+.caja-linea {
+}
+.caja-none,
+.caja-linea-bloque {
+  background-color: greenyellow;
+  color: black;
+  width: 600px;
+  height: 300px;
+  border: medium solid black;
+}
+.caja-linea-bloque {
+  display: inline-block;
+}
+.caja-none {
+  display: none;
+}
+/*  Propiedad Visibility  */
+.caja-hidden {
+  visibility: hidden;
+}
+/* Propiedad Overflow */
+.overflow {
+  background-color: cyan;
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  overflow: scroll;
+  overflow: auto;
+}
+/* Tamaño de Caja */
+.box-sizing-content,
+.box-sizing-border {
+  background-color: deepskyblue;
+  box-sizing: content-box;
+  width: 500px;
+  height: 250px;
+  padding: 10px;
+  border: thick solid black;
+}
+.box-sizing-border {
+  box-sizing: border-box;
+}
+.container-col-3 {
+  background-color: burlywood;
+  width: 600px;
+  height: 300px;
+  margin-top: 20px;
+}
+.container-col-3 > * {
+  box-sizing: border-box;
+  width: 200px;
+  float: left;
+  padding: 10px;
+  border: medium dashed orangered;
+  text-align: center;
+}
