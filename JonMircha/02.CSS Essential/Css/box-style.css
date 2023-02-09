@@ -110,3 +110,40 @@ List-item
   border: medium dashed orangered;
   text-align: center;
 }
+/* Floats & Clear*/
+.container-floats {
+  background-color: cornflowerblue;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.clearfix {
+  clear: both;
+}
+/* Colapso de márgenes Verticales */
+.margin-collapse {
+  background-color: skyblue;
+}
+.margin-collapse section {
+  border: thin solid black;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.margin-collapse span {
+  display: inline-block;
+  margin-right: 16px;
+  margin-left: 16px;
+  border: thin solid black;
+}
+.sitio-web {
+  border: thin solid black;
+  background-color: thistle;
+  width: 800px;
+  height: 1000px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
