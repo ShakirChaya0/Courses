@@ -1,0 +1,48 @@
+.color-by-name {
+  background-color: aquamarine;
+  color: rebeccapurple;
+  border: thick dashed greenyellow;
+}
+/* 
+Sistema Hexadecimal #ff6600 (ff=red), (66=green),(00=Blue) 
+  */
+.hexadecimal {
+  background-color: #ff6600;
+  background-color: #00000020;
+  color: #12aa7880;
+  border: thick dashed #ffffff;
+  border: thick dashed #ff0000;
+  border: thick dashed #00ff00;
+  border: thick dashed #0000ff;
+  border: thick dashed #000000;
+}
+/* RedGreenBlue (RGB) */
+.rgb {
+  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 255, 0);
+  background-color: rgb(0, 0, 255);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(100, 100, 200);
+  border: thick dashed rgb(100, 100, 200);
+}
+/* HueSaturationLightness (HSL) */
+.hsl {
+  background-color: hsl(0, 75%, 50%);
+  color: hsl(190, 100%, 50%);
+  border: thick dashed hsl(146, 59%, 39%);
+}
+/* Valores Transparen & CurrentColor */
+.color-tc {
+  background-color: darkmagenta;
+  background-color: currentColor;
+  background-color: transparent;
+  border: thick double currentColor;
+}
+.opacity {
+  background-color: orchid;
+  color: navy;
+  border: thick groove black;
+  opacity: 0.7;
+}

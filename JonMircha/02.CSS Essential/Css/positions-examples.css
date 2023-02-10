@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  /* padding-top: 50px; */
+}
+.header {
+  background-color: mistyrose;
+  width: 100%;
+  height: 50px;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+.hero-image {
+  background-color: palegoldenrod;
+  width: 100%;
+  height: 100vh;
+}
+.slide {
+  background-color: paleturquoise;
+  width: 100%;
+  height: 100vh;
+}
+.slide:nth-child(odd) {
+  background-color: palevioletred;
+}
+.slide-title {
+  background-color: palegreen;
+  padding: 16px;
+  text-align: center;
+  position: sticky;
+  top: 50px;
+  margin: 0;
+}
+.modal-window {
+  background-color: wheat;
+  color: orangered;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.modal-window:target {
+  display: block;
+}
+.modal-window a {
+  color: goldenrod;
+}
+.box {
+  background-color: sandybrown;
+  padding: 20px;
+  margin: -30px;
+}
