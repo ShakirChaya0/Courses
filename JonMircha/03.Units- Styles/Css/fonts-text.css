@@ -22,3 +22,51 @@ font
   font-family: "raleway";
   font-size: 2rem;
 }
+/* 
+text-align
+text-decoration
+text-indent
+text-overflow (overflow: hidden; white-space: nowrap)
+text-shadow
+text-transform
+
+letter-spacing
+white-space
+word-spacing
+word-break
+writing-mode
+*/
+.text {
+  font-size: 2rem;
+  text-align: left;
+  text-decoration: underline;
+  text-indent: 3rem;
+  text-transform: capitalize;
+  text-transform: lowercase;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+.text-overflow {
+  font-size: 2rem;
+  background-color: blanchedalmond;
+  border: thin solid black;
+  padding: 1rem;
+  width: 50%;
+  font-size: 2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}

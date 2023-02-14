@@ -1,0 +1,36 @@
+.box {
+  background-color: black;
+  margin: 2rem auto;
+  width: 400px;
+  height: 400px;
+  border: thick solid red;
+}
+.border-radius {
+  border-radius: 2rem;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 4rem;
+  border-top-left-radius: 2rem;
+  border-radius: 2rem 4rem;
+  border-radius: 2rem 4rem 0rem;
+  border-radius: 2rem 3rem 4rem 0rem;
+  border-radius: 2rem;
+}
+.border-radius-2 {
+  border-radius: 2rem / 4rem;
+  border-radius: 2rem 4rem / 4rem 8rem;
+}
+.border-radius-3 {
+  border-radius: 50%;
+}
+.outline {
+  color: aliceblue;
+  text-align: center;
+  outline-width: 5px;
+  outline-style: dashed;
+  outline-color: blueviolet;
+  outline: thick solid blue;
+  /* border-width: 100px; */
+  outline-width: 20px;
+  outline-offset: 3rem;
+}

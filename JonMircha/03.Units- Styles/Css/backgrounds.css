@@ -1,0 +1,73 @@
+.box {
+  margin: 2rem auto;
+  width: 300px;
+  height: 300px;
+  border: thick dashed red;
+}
+.bg-color {
+  background-color: black;
+}
+.bg-image {
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+}
+.bg-size {
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+  background-size: 300px 300px;
+}
+.bg-repeat {
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+}
+.bg-position {
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: 4rem 3rem;
+  background-position: 20% 30%;
+  background-position: center;
+  background-position: left;
+  background-position: right;
+  background-position: top center;
+  background-position: bottom center;
+}
+.bg-clip {
+  background-color: skyblue;
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+  padding: 1rem;
+  background-size: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-clip: padding-box;
+  background-clip: content-box;
+}
+.bg-origin {
+  background-color: skyblue;
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+  padding: 1rem;
+  background-size: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+  background-origin: border-box;
+  background-origin: content-box;
+}
+.bg-attachment {
+  background-color: skyblue;
+  background-image: url(../../00.Assets/tree-736885_1280.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  background-attachment: scroll;
+  background-attachment: fixed;
+}
+.bg-multiple {
+  width: 50%;
+  height: 30vh;
+  background-image: url(../../00.Assets/tree-736885_1280.jpg),
+    url(/JonMircha/00.Assets/images.jfif);
+  background-repeat: repeat-x, no-repeat;
+  background-size: 10%, cover;
+}
