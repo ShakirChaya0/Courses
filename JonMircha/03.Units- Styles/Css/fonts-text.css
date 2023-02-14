@@ -1,0 +1,24 @@
+/* 
+font-family
+font-size
+font-weight
+font-style
+font-variant
+line-height
+font
+*/
+
+.font {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  line-height: 2;
+  /* font: a a a a a a */
+}
+.raleway {
+  font-family: "raleway";
+  font-size: 2rem;
+}

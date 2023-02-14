@@ -1,0 +1,107 @@
+/* 
+Unidades de medida absolutas:
+
+cm= Centímetros	   1cm =  96px/2,54
+mm= Milímetros	   1mm =  1/10 de 1cm
+Q=  1/4 milímetros 1Q  =  1/40 de 1cm
+in= Pulgadas	     1in =  2,54cm = 96px
+pc= Picas	         1pc =  1/6 de 1in
+pt= Puntos	       1pt =  1/72 de 1in
+px= Píxeles	       1px =  1/96 de 1in
+
+Unidades de longitud relativa:
+
+em=   Tamaño de letra del elemento padre
+ex=   Altura x de la fuente del elemento.
+ch=   La medida de avance (ancho) del glifo "0" de la letra del elemento.
+rem=  Tamaño de la letra del elemento raíz.
+lh=   Altura de la línea del elemento.
+vw=   1% del ancho de la ventana gráfica.
+vh=   1% de la altura de la ventana gráfica.
+vmin= 1% de la dimensión más pequeña de la ventana gráfica.
+vmax= 1% de la dimensión más grande de la ventana gráfica.
+%=    Al tamaño del contenedor
+*/
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-size: 16px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+.pixels {
+  background-color: aquamarine;
+  width: 500px;
+  height: 400px;
+  font-size: 16px;
+  padding: 20px;
+  border: thick solid rebeccapurple;
+}
+.ems {
+  background-color: aquamarine;
+  font-size: 24px;
+  padding: 1em 0.5em;
+  border: thick solid rebeccapurple;
+}
+.em-child {
+  background-color: salmon;
+  border: thick solid antiquewhite;
+  font-size: 2em;
+  padding: 1em;
+  margin: 0.5em;
+}
+.rems {
+  background-color: aquamarine;
+  font-size: 24px;
+  padding: 1rem 0.5rem;
+  border: thick solid rebeccapurple;
+}
+.rem-child {
+  background-color: salmon;
+  border: thick solid antiquewhite;
+  font-size: 2rem;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.exs {
+  background-color: aquamarine;
+  font-size: 24px;
+  padding: 1ex 0.5ex;
+  border: thick solid rebeccapurple;
+}
+.ex-child {
+  background-color: salmon;
+  border: thick solid antiquewhite;
+  font-size: 2ex;
+  padding: 1ex;
+  margin: 0.5ex;
+}
+.chs {
+  background-color: aquamarine;
+  width: 10ch;
+}
+.percentages {
+  background-color: darkcyan;
+  width: 50%;
+  height: 100%;
+  font-size: 150%;
+  /* padding: 5%;
+  margin: 20% 10%; */
+}
+.viewport {
+  background-color: darkgrey;
+  width: 50vw;
+  height: 50vh;
+  font-size: 2vw;
+  padding: 2vh 2vw;
+}
+.vmin,
+.vmax {
+  background-color: darksalmon;
+  border: thick solid cyan;
+  width: 50vmax;
+  height: 50vmin;
+}
