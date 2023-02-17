@@ -132,3 +132,194 @@ html {
   );
   background-image: radial-gradient(circle 100px, red 50%, white 50%);
 }
+.conic-gradient {
+  background-image: conic-gradient(red, green);
+  background-image: conic-gradient(red, green, blue);
+  background-image: conic-gradient(red 0% 50%, green 60%, blue 80%);
+  background-image: conic-gradient(
+    from 270deg,
+    red 0deg 90deg,
+    green 120deg 240deg,
+    blue 270deg 360deg
+  );
+  background-image: conic-gradient(
+    from 90deg,
+    red 0deg 120deg,
+    white 120deg 240deg,
+    blue 240deg 360deg
+  );
+}
+.repeat-linear-gradient {
+  background-image: repeating-linear-gradient(
+    red 0 10px,
+    green 10px 20px,
+    blue 20px 30px
+  );
+  background-image: repeating-linear-gradient(
+    45deg,
+    red 0 10px,
+    green 10px 20px,
+    blue 20px 30px
+  );
+}
+.repeat-radial-gradient {
+  background-image: repeating-radial-gradient(
+    circle 4rem,
+    cyan 0 10px,
+    magenta 10px 20px,
+    yellow 20px 30px
+  );
+}
+.repeat-conic-gradient {
+  background-image: repeating-conic-gradient(
+    red 0 6%,
+    yellow 8% 14%,
+    black 16% 22%
+  );
+}
+.chart-gradient {
+  background-image: conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+.donut-gradient {
+  background-image: radial-gradient(white 30%, black 31%, transparent 34%),
+    conic-gradient(cyan 0% 50%, magenta 50% 80%, yellow 80%);
+  border-radius: 50%;
+}
+.card {
+  border: thick solid black;
+  width: 600px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.filter {
+  /* filter: blur(0.1rem);
+  filter: brightness(0.7);
+  filter: contrast(0.5);
+  filter: grayscale(0.7);
+  filter: sepia(1);
+  filter: hue-rotate(300deg);
+  filter: opacity(0.5);
+  filter: drop-shadow(-1rem -1rem 1rem blue);
+  filter: saturate(1);  */
+  filter: invert(1);
+}
+.filter-multiple {
+  filter: blur(0.1rem) hue-rotate(270deg) opacity(0.75) invert(1);
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.backdrop-filter,
+.backdrop-filter-multiple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.backdrop-filter h4 {
+  font-size: 3rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: grayscale(1);
+  backdrop-filter: invert(1);
+  backdrop-filter: opacity(0.25);
+  backdrop-filter: hue-rotate(180deg);
+  backdrop-filter: blur(0.5rem) opacity(0.75);
+}
+.backdrop-filter-multiple h4 {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 2rem;
+  backdrop-filter: blur(1rem) hue-rotate(240deg) opacity(0.75) invert(1);
+}
+.dark-mode {
+  background-color: #fff;
+  color: #000;
+  filter: invert(1);
+}
+.dark-mode img {
+  filter: invert(1);
+}
+.blend-modes img {
+  /* mix-blend-mode: normal;
+  mix-blend-mode: color;
+  mix-blend-mode: color-burn;
+  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
+  mix-blend-mode: saturation;
+  mix-blend-mode: luminosity;
+  mix-blend-mode: hue;
+  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
+  mix-blend-mode: soft-light;
+  mix-blend-mode: lighten;
+  mix-blend-mode: overlay; */
+  mix-blend-mode: darken;
+}
+.bg-blend-modes {
+  background-image: url(/JonMircha/00.Assets/tree-736885_1280.jpg),
+    url(/JonMircha/00.Assets/paisaje.jfif);
+  background-size: cover;
+  /* background-blend-mode: normal;
+  background-blend-mode: color;
+  background-blend-mode: color-burn;
+  background-blend-mode: screen;
+  background-blend-mode: saturation;
+  background-blend-mode: luminosity;
+  background-blend-mode: exclusion;
+  background-blend-mode: hard-light;
+  background-blend-mode: darken;
+  background-blend-mode: lighten;
+  background-blend-mode: soft-light;
+  background-blend-mode: overlay;
+  background-blend-mode: multiply;
+  background-blend-mode: difference;
+  */
+  background-blend-mode: hue;
+}
+/* Clip-path ppolygon Generator */
+.clip-path {
+  clip-path: circle(10rem at top);
+  clip-path: circle(10rem at top right);
+  clip-path: circle(10rem at 50% 50%);
+  clip-path: ellipse(5rem 7.5rem at left);
+  clip-path: ellipse(5rem 7.5rem at top);
+  clip-path: ellipse(7rem 9rem at 50% 60%);
+  clip-path: inset(2rem 7rem 2rem);
+  clip-path: inset(1rem round 1rem 2rem 3rem 4rem);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
