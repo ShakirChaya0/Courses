@@ -323,3 +323,47 @@ html {
     39% 35%
   );
 }
+.shapes {
+  border: thick solid black;
+  padding: 1rem;
+  margin: 0 auto 5rem;
+  max-width: 800px;
+}
+.shapes img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 0%;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.shapes-1 {
+  margin: 4rem 2rem 4rem 0rem;
+  /* shape-outside: circle();
+  shape-outside: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+    ); */
+  shape-outside: ellipse();
+}
+.shapes-2 {
+  margin: 4rem 0rem 4rem 2rem;
+  shape-outside: circle();
+}
+.shapes-3 {
+  margin: 2rem 3rem 0 0;
+  shape-outside: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
