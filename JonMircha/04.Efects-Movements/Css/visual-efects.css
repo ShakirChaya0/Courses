@@ -258,9 +258,9 @@ html {
   color: #000;
   filter: invert(1);
 }
-.dark-mode img {
+/* .dark-mode img {
   filter: invert(1);
-}
+} */
 .blend-modes img {
   /* mix-blend-mode: normal;
   mix-blend-mode: color;
