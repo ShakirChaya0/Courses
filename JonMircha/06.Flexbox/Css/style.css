@@ -1,27 +1,41 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 .container {
-    background-color: #333;
-    height: 30vh;
-    
+  background-color: #333;
+  height: 400px;
 
-
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex-flow: row nowrap;
-    /* justify-content: flex-start; flex-start | center |flex-end | space-between | space-around | space-envenly */
-    justify-content: flex-start;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row nowrap;
+  /*flex-start; flex-start | center |flex-end | space-between | space-around | space-envenly */
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
 }
 .item {
-    border: medium solid black;
-    background-color: #666;
+  border: medium solid black;
+  background-color: #666;
+
+  flex-grow: 0; /* Crece */
+  flex-shrink: 1; /* Decrece */
+  flex-basis: auto; /* Tamaño que ocupa la caja */
+  flex: 0 1 auto; /* Shorthand */
+  order: 0;
+}
+
+.item:nth-child(2) {
+  /* flex-grow: 3; */
+  order: -1;
+  align-self: flex-end;
+}
+.item:nth-child(3) {
+  /* flex-grow: 2; */
+  align-self: center;
 }

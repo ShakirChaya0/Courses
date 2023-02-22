@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.titulares {
+  padding: 1rem;
+  background-color: #222;
+  color: #eee;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+.hero-image {
+  min-height: 100vh;
+  background-color: rgba(0, 100, 100, 0.95);
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu ul {
+    display: flex;
+  }
+  .menu li {
+    padding: 0.5rem;
+  }
+}
