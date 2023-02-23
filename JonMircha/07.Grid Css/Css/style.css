@@ -48,8 +48,8 @@ img {
   margin: 0 auto;
   width: 80%;
   height: 80vh;
-  /* background-color: #222;
-  border: medium solid #000; */
+  background-color: #222;
+  border: medium solid #000;
 }
 
 .item {
@@ -59,10 +59,87 @@ img {
   border: medium solid #999;
 }
 .grid-explicit {
+  background-color: #333;
   display: grid;
   grid-template-columns: 50% 100px 1fr;
   grid-template-rows: 2rem 20vh 30%;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(4, 25%);
-  gap: 1vh 1vw;
+  grid-template-columns: 20% repeat(2, 30%) 20%;
+  grid-template-rows: repeat(5, 20%);
+  /* gap: 1vh 1vw; */
+}
+.grid-explicit .item:nth-child(10) {
+  color: cyan;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 2 / 3;
+  grid-column: 3 / 5;
+  /* shorthhand de grid-row y grid-column */
+  grid-area: 2 / 3 / 3 / 5;
+}
+.grid-explicit .item:nth-child(12) {
+  color: cyan;
+  grid-area: span 2 / span 3;
+}
+.grid-explicit .item:nth-child(15) {
+  color: cyan;
+  grid-column: 1 / span 2;
+  grid-area: 1 / span 2 / 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.grid-line-names {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.grid-line-names .item:nth-child(3) {
+  color: cyan;
+}
+/* .grid-areas {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 15% 70% 15%;
+}
+.grid-areas .header,
+.grid-areas .footer {
+  grid-column: span 2;
+} */
+.grid-areas {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-template-rows: 100px repeat(2, 1fr) 100px;
+  grid-template-areas:
+    "header header"
+    "content sidebar"
+    "content ."
+    "footer footer";
+}
+.grid-areas .header {
+  grid-area: header;
+}
+.grid-areas .content {
+  grid-area: content;
+}
+.grid-areas .sidebar {
+  grid-area: sidebar;
+}
+.grid-areas .footer {
+  grid-area: footer;
+}
+.grid-implicit {
+  display: grid;
+  display: inline-grid;
+  width: 40%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 200px);
+}
+.grid-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  grid-auto-flow: column;
+  grid-auto-flow: row;
+  grid-auto-rows: 100px;
+  grid-auto-columns: 100px;
 }
