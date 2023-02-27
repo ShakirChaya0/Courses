@@ -226,3 +226,14 @@ img {
   align-content: space-around;
   align-content: space-evenly;
 }
+.grid-repeat {
+  display: grid;
+  grid-template-columns: repeat(1, 10% 20% 30% 40%);
+  grid-template-rows: repeat(2, 100px 200px);
+}
+.grid-dynamics {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-columns: repeat(auto-fit, 100px);
+}
