@@ -1,0 +1,6 @@
+Añadiendo una linea desde escribir_txt con el metodo .write 
+Añadiendo una linea desde escribir_txt con el metodo .writelines 
+Jajajaja 
+Añadiendo 2 lineas mas 
+Jajajaja 
+
