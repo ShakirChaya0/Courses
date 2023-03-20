@@ -1,0 +1,32 @@
+Los datos son: 
+--------------- 
+Nombre: Shakir,
+Apellido: Chaya 
+--------------- 
+Nombre: Pedro,
+Apellido: Zing 
+--------------- 
+Nombre: Camila,
+Apellido: Dalto 
+--------------- 
+Nombre: Lucas,
+Apellido: Rotre 
+--------------- 
+Nombre: Juan,
+Apellido: tatan 
+--------------- 
+Nombre: Shakir
+Apellido: Chaya
+ ------------
+Nombre: Pedro
+Apellido: Zing
+ ------------
+Nombre: Camila
+Apellido: Dalto
+ ------------
+Nombre: Lucas
+Apellido: Rotre
+ ------------
+Nombre: Juan
+Apellido: tatan
+ ------------
