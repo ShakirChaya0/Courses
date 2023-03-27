@@ -39,6 +39,11 @@ name_with_default("Shakir", "Chaya")
 
 print("------------------------")
 
+def print_texts(*texts):
+  for text in texts:
+    print(text.upper())
 
+print_texts("Hola","Shakir","Chaya")
+print_texts("Hola")
 
 
