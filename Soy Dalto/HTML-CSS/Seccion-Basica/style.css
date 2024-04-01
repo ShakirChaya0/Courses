@@ -1,0 +1,51 @@
+body {
+  background-color: black;
+}
+
+.card {
+  display: inline-block;
+  color: white;
+  width: 400px;
+  margin: 20px 5px;
+  background-color: rgba(10, 210, 236, 0.782);
+  text-align: center;
+  box-shadow: 10px 10px 100px 2px rgba(62, 62, 62, 0.8);
+  background: linear-gradient(rgba(10, 210, 236, 0.782), transparent);
+  padding-top: 10px;
+  font-family: sans-serif;
+  border-radius: 10px 10px 0 0;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.889);
+}
+.color-2 {
+  background-color: blue;
+}
+.color-3 {
+  background-color: chocolate;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+.card-subtitle {
+  letter-spacing: 4px;
+  font-size: 24px;
+}
+
+.card-content {
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: justify;
+  padding: 20px;
+}
+
+.imagen {
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: url(Imagen-graduacion.jfif);
+  background-size: cover;
+  filter: drop-shadow(0 0 5px black);
+}

@@ -1,0 +1,52 @@
+body {
+  height: 100vh;
+  background-color: #121212;
+  font-family: sans-serif;
+  background: linear-gradient(#333, #000);
+}
+
+.form-contact {
+  background-color: #00000088;
+  margin: 50px auto;
+  box-shadow: 0 0 50px 5px rgba(200, 200, 200, 0.267);
+  max-width: 500px;
+}
+.title {
+  text-align: center;
+  color: #fffb;
+  padding: 20px;
+}
+
+.form-input {
+  padding: 10px 30px;
+  
+}
+
+.submit {
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+
+input, textarea, select {
+  color: #bebebe;
+  width: 100%;
+  padding: 5px;
+  background-color: #121212;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 1px 1px 30px 3px #fff2;
+  margin-top: 7px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100%;
+  resize: vertical;
+}
+
+label {
+  color: white;
+}

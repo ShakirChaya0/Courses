@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  background-color: #121212;
+  font-family: sans-serif;
+  background: linear-gradient(#000, #666);
+}
+
+.formulario {
+  margin: 30px auto;
+  max-width: 600px;
+
+}
+
+legend {
+  color: #fff5;
+  padding: 0 10px;
+}
+
+fieldset {
+  margin: 20px;
+  border: 2px solid #fff2;
+  text-transform: uppercase;
+}
+
+input {
+  color: #bebebe;
+  width: 100%;
+  padding: 5px;
+  background-color: #121212;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 1px 1px 30px 3px #fff2;
+  margin-top: 7px;
+}
