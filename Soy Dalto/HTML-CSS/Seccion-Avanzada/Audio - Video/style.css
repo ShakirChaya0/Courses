@@ -1,0 +1,10 @@
+body {
+  padding: 0px;
+}
+video {
+  width: 70%;
+  padding: 0 15%;
+}
+audio {
+  display: block;
+}

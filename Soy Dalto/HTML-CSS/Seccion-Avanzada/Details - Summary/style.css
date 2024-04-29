@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+  font-family: sans-serif;
+}
+
+details {
+  background-color: transparent;
+  border: 1px solid white;
+  color: aliceblue;
+}
+
+details[open] {
+  background-color: #444;
+}
+
+summary {
+  padding: 10px;
+}

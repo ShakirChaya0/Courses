@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="form-contact">
+
+    <h1 class="title">Formulario de contacto</h1>
+
+    <div class="form-input">
+      <label>Tipo de Usuario
+        <select name="type-of-user">
+          <option value="user0">Usuario</option>
+          <option value="user1">Administrador</option>
+          <option value="user2">Dueño</option>
+          <option value="user3">Cliente</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="form-input">
+      <label> Nombre Completo
+        <input type="text" placeholder="Juan Pedro">
+      </label>
+    </div>
+
+    <div class="form-input">
+      <label>Email
+        <input type="email" placeholder="Email@gmail.com">
+      </label>
+    </div>
+
+    <div class="form-input">
+      <label>Contraseña
+        <input type="password" placeholder="JP123">
+      </label>
+    </div>
+
+    <div class="form-input">
+      <label>Mensaje
+        <textarea placeholder="Escribe tu mensaje..."></textarea>
+      </label>
+    </div>
+
+    <div class="form-input">
+      <label>Acepto los <a href="">términos y condiciones</a>
+        <input class="checkbox" type="checkbox" placeholder="Enviar">
+      </label>
+    </div>
+
+    <div class="form-input">
+        <input class="submit" type="submit" placeholder="Enviar">
+    </div>
+
+  </form>
+
+</body>
+</html>

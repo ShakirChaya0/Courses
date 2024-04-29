@@ -1,3 +1,7 @@
 {
-  "cmake.configureOnOpen": false
+  "cmake.configureOnOpen": false,
+  "files.associations": {
+    "math.h": "c",
+    "stdio.h": "c"
+  }
 }

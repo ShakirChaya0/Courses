@@ -4,13 +4,13 @@ int main() {
 
   // Arithmetics Operators
 
-  // + (addition)
-  // - (subtraction)
-  // * (multiplication)
-  // / (divison)
-  // % (modulus)
+  // +  (addition)
+  // -  (subtraction)
+  // *  (multiplication)
+  // /  (divison)
+  // %  (modulus)
   // ++ (increment)
-  // -- decrement
+  // -- (decrement)
 
   int x = 5;
   int y = 2;
