@@ -1,3 +1,23 @@
+/* Event Loop (Bucle de eventos)
+
+// Components of the Event Loop:
+    1. Call Stack:  JavaScript ejecuta el código aquí, paso a paso.
+    2. Web APIs or Node.js APIs:  Realizan tareas en segundo plano (como temporizadores o búsquedas). 
+    3. Queues: 
+        - Microtask Queue:  Para promesas (se ejecuta primero).
+        - Task Queue: Para setTimeout y eventos (se ejecuta después).
+
+// Flujo del Event Loop:
+    1. Call Stack
+    2. Operaciones asíncronas -> Web APIs o Node.js
+    3. Operación termina -> La coloca en Task Queue o Microtask Queue
+    4. Si Call Stack vacío -> Mueve tareas del Microtask Queue o Task Queue al Call Stack
+    5. El proceso se repite
+
+*/
+
+
+
 // Programación asíncrona
 
 // Código síncrono
@@ -8,23 +28,9 @@ for (let i = 0; i < 100000000; i++) { }
 
 console.log("Fin")
 
-// Event Loop (Bucle de eventos)
-
-// Componentes del Event Loop:
-// 1. Call Stack (Pila de ejecución)
-// 2. Web APIs (APIs del navegador) o Node.js:
-// 3. Task Queue (setTimeout()) y Microtask Queue (Promesas)
-
-// Flujo del Event Loop:
-// 1. Call Stack
-// 2. Operaciones asíncronas -> Web APIs o Node.js
-// 3. Operación termina -> La coloca en Task Queue o Microtask Queue
-// 4. Si Call Stack vacío -> Mueve tareas del Microtask Queue o Task Queue al Call Stack
-// 5. El proceso se repite
-
 // Código asíncrono
 
-// Callbacks
+// Callbacks: Mecanismo básico para usar asincronía
 
 console.log("Inicio")
 
@@ -85,6 +91,10 @@ promise
     .catch(error => {
         console.log(error)
     })
+     .finally(always => {
+        console.log("Se ejecuta siempre")
+    })
+
 
 // Encadenamiento de promesas
 
@@ -122,11 +132,11 @@ step1Promise()
         console.log("Todos los pasos con promesa completados")
     })
 
-// Async/Await
+// Async - Await: Forma más común y moderna. Se encuentra en varios lenguajes
 
-function wait(ms) {
+function wait(ms) { // Función para simular el tiempo
     return new Promise(resolve => setTimeout(resolve, ms))
-}
+} 
 
 async function process() {
 
