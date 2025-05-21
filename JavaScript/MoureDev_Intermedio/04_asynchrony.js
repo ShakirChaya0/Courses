@@ -1,4 +1,4 @@
-/* Event Loop (Bucle de eventos)
+/* ---------- Event Loop (Bucle de eventos) ----------
 
 // Components of the Event Loop:
     1. Call Stack:  JavaScript ejecuta el código aquí, paso a paso.
@@ -18,9 +18,9 @@
 
 
 
-// Programación asíncrona
+// ---------- Programación asíncrona ----------
 
-// Código síncrono
+// ---------- Código síncrono ----------
 
 console.log("Inicio")
 
@@ -28,9 +28,11 @@ for (let i = 0; i < 100000000; i++) { }
 
 console.log("Fin")
 
-// Código asíncrono
 
-// Callbacks: Mecanismo básico para usar asincronía
+
+// ---------- Código asíncrono ----------
+
+// ---------- Callbacks: Mecanismo básico para usar asincronía ----------
 
 console.log("Inicio")
 
@@ -40,7 +42,9 @@ setTimeout(() => {
 
 console.log("Fin")
 
-// Problema: Callback Hell
+
+
+// ---------- Problema: Callback Hell ----------
 
 function step1(callback) {
     setTimeout(() => {
@@ -71,7 +75,9 @@ step1(() => {
     })
 })
 
-// Promesas
+
+
+// ---------- Promesas ----------
 
 const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -96,7 +102,8 @@ promise
     })
 
 
-// Encadenamiento de promesas
+
+// ---------- Encadenamiento de promesas ----------
 
 function step1Promise() {
     return new Promise(resolve => {
@@ -132,7 +139,9 @@ step1Promise()
         console.log("Todos los pasos con promesa completados")
     })
 
-// Async - Await: Forma más común y moderna. Se encuentra en varios lenguajes
+
+
+// ---------- Async - Await ----------  (Forma más común y moderna. Se encuentra en varios lenguajes)
 
 function wait(ms) { // Función para simular el tiempo
     return new Promise(resolve => setTimeout(resolve, ms))

@@ -1,4 +1,4 @@
-/* APIs REST (HTTP + URLs + JSON): Más comunes
+/* ---------- APIs REST (HTTP + URLs + JSON) más comunes ----------
 
 Métodos HTTP más comunes: 
     - GET: Solicita datos.
@@ -15,9 +15,11 @@ Códigos de respuesta HTTP más comunes:
 
 */
 
-// Consumir una API
 
-// GET básico
+
+// ---------- Consumir una API ----------
+
+// ---------- GET básico ----------
 
 fetch("https://jsonplaceholder.typicode.com/posts")
     .then(response => {
@@ -34,7 +36,8 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     })
 
 
-// GET con uso de Async - Await
+
+// ---------- GET con uso de Async - Await ----------
 
 async function getPosts() {
     try {
@@ -49,7 +52,8 @@ async function getPosts() {
 getPosts()
 
 
-// Solicitud POST
+
+// ---------- Solicitud POST ----------
 
 async function createPost() {
     try {
@@ -84,11 +88,13 @@ createPost()
 
 */
 
-// Manejo de errores
 
-fetch("https://jsonplaceholder.typicode.com/mouredev")
+
+// ---------- Manejo de errores ----------
+
+fetch("https://jsonplaceholder.typicode.com/Shakir")
     .then(response => {
-        if (!response.ok) {
+        if (!response.ok) { // .ok son todas las respuestas 200
             throw Error(`Status HTTP: ${response.status}`)
         }
         return response.json()
@@ -97,9 +103,12 @@ fetch("https://jsonplaceholder.typicode.com/mouredev")
         console.log("Error", error)
     })
 
-// Métodos HTTP adicionales
-// - PATCH
-// - OPTIONS
+
+    
+// ---------- Métodos HTTP adicionales ----------
+
+// PATCH: Actualizo solo 1 recurso. Put actualiza varios.
+// OPTIONS: Permite consultar los métodos disponibles Para un recurso 
 
 async function partialPostUpdate() {
     try {
@@ -120,12 +129,14 @@ async function partialPostUpdate() {
 
 partialPostUpdate()
 
-// Autenticación mediante API Key
+
+
+// ---------- Autenticación mediante API Key ----------
 
 async function getWeather(city) {
 
     // https://openweathermap.org
-    const apiKey = "TU_API_KEY"
+    const apiKey = "TU_API_KEY" // La clave de acceso a tu API
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
 
     try {
@@ -139,15 +150,23 @@ async function getWeather(city) {
 
 getWeather("Madrid")
 
-// Otros métodos de Autenticación y Autorización
-// - Bearer Tokens
-// - JWT
 
-// Versionado de APIs
-// - https://api.example.com/v1/resources
-// - https://api.example.com/v2/resources
+/*
+---------- Otros métodos de Autenticación y Autorización ----------
 
-// Otras APIs
+- Bearer Tokens
+- JWT
+
+
+
+---------- Versionado de APIs ----------
+    - https://api.example.com/v1/resources
+    - https://api.example.com/v2/resources
+*/
+
+
+
+// ---------- Otras APIs ----------
 
 async function getPokemon(pokemon) {
 
@@ -157,7 +176,7 @@ async function getPokemon(pokemon) {
     try {
         const response = await fetch(url)
         const data = await response.json()
-        console.log(`Habilidades de ${data.name}`)
+        console.log(`Habilidades de ${data.name}`) // Para acceder a campos específicos de el json
         data.abilities.forEach(ability => {
             console.log(ability.ability.name)
         })

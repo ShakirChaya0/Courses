@@ -1,4 +1,4 @@
-// Clases avanzadas
+// ---------- Clases avanzadas ----------
 
 class Person {
     constructor(name, age) {
@@ -20,7 +20,8 @@ person.sayAge = function () {
 person.sayAge()
 
 
-// Clases Abstractas
+
+// ---------- Clases Abstractas ----------
 
 class Animal {
     constructor(name) {
@@ -40,7 +41,8 @@ class Animal {
 */ 
 
 
-// Polimorfismo: Capacidad de que el mismo método tenga comportamientos distintos
+
+// ---------- Polimorfismo ---------- (Capacidad de que el mismo método tenga comportamientos distintos)
 
 class Cat extends Animal {
 
@@ -65,7 +67,8 @@ console.log(dog)
 dog.makeSound()
 
 
-// Mixins: Otra forma de establecer herencia, ayuda a no reescribir líneas de código
+
+// ---------- Mixins ---------- (Otra forma de establecer herencia, ayuda a no reescribir líneas de código)
 
 const FlyMixin = {
     fly() {
@@ -88,7 +91,8 @@ console.log(dragon.name)
 dragon.fly()
 
 
-// Patrón Singleton: Patrón que asegura que una clase se pueda instanciar una única vez
+
+// ---------- Patrón Singleton ---------- (Patrón que asegura que una clase se pueda instanciar una única vez)
 
 class Session {
 
@@ -112,8 +116,10 @@ console.log(session3.name)
 console.log(session2 === session3)
 
 
-// Symbol: Identificador único e inmutable
-// Froma antigua de definir propiedades privadas
+
+// ---------- Symbol ---------- (Identificador único e inmutable)
+// Forma antigua de definir propiedades privadas
+
 const ID = Symbol("id")
 
 class User {
@@ -132,7 +138,9 @@ console.log(user.name)
 console.log(user.ID)
 console.log(user.getId())
 
-// instanceof: Sirve para comprobar si un objeto es instancia de una clase
+
+
+// ---------- instanceof ---------- (Sirve para comprobar si un objeto es instancia de una clase)
 
 class Car { }
 
@@ -140,15 +148,19 @@ const car = new Car()
 
 console.log(car instanceof Car)
 
-// create: Otra forma de crear una instancia de un objeto
+
+
+// ---------- create ---------- (Otra forma de crear una instancia de un objeto)
 
 const anotherCar = Object.create(Car.prototype)
 
 console.log(anotherCar instanceof Car)
 
 
-// Proxy: Sirve para interceptar y personalizar el comportamiento de clases 
+
+// ---------- Proxy ---------- (Sirve para interceptar y personalizar el comportamiento de clases)
 // Puede servir para seguridad
+
 const proxy = {
     get(target, property) {
         console.log(`Se accede a la propiedad ${property}`)
@@ -175,4 +187,4 @@ account.balance = 50
 console.log(account.balance)
 
 // Error
-// account.balance = -10
+// account.balance = -10 

@@ -1,7 +1,6 @@
-// Objetos avanzados
+// ---------- Objetos avanzados ----------
 
-
-// Prototipos --> Se usaba antes de que existieran las clases
+// ---------- Prototipos ---------- (Se usaba antes de que existieran las clases)
 
 let person = {
     name: "Shakir",
@@ -22,7 +21,8 @@ console.log(person)
 person.sayAge()
 
 
-// Herencia a partir del prototipo
+
+// ---------- Herencia a partir del prototipo ----------
 
 let programmer = Object.create(person) // Crear un objeto a partir de otro
 programmer.language = "JavaScript"
@@ -38,7 +38,8 @@ programmer.greet()
 programmer.sayAge()
 
 
-// Métodos estáticos y de instancia a partir del prototipo
+
+// ---------- Métodos estáticos y de instancia a partir del prototipo ----------
 
 function Person(name, age) {
     this.name = name
@@ -53,7 +54,8 @@ let newPerson = new Person("Brais", 37)
 newPerson.greet()
 
 
-// Métodos avanzados
+
+// ---------- Métodos avanzados ----------
 
 // assign
 

@@ -1,6 +1,6 @@
-// Funciones Avanzadas
+// ---------- Funciones Avanzadas ----------
 
-// Ciudadanos de primera clase
+// ---------- Ciudadanos de primera clase ----------
 
 const greet = function (name) {
     console.log(`Hola, ${name}`)
@@ -21,7 +21,8 @@ const greet2 = returnGreeting()
 greet2("Shakir Chaya")
 
 
-// Arrow functions avanzadas
+
+// ---------- Arrow functions avanzadas ----------
 
 // Retorno implícito
 
@@ -43,7 +44,9 @@ const handler = {
 handler.greeting(); // Las funciones se adaptan al contexto en el que estan
 handler.arrowGreeting(); // Las arrows function crean su propio contexto
 
-// IIFE (Expresión de Función Invocada Inmediatamente)
+
+
+// ---------- IIFE ---------- (Expresión de Función Invocada Inmediatamente)
 
 (function () {
     console.log("IIFE clásico")
@@ -53,7 +56,9 @@ handler.arrowGreeting(); // Las arrows function crean su propio contexto
     console.log("IIFE con arrow function")
 })();
 
-// Parámetros Rest (...)
+
+
+// ---------- Parámetros Rest (...) ----------
 
 function sum(...numbers) {
     let result = 0
@@ -66,7 +71,9 @@ function sum(...numbers) {
 console.log(sum(1, 2, 3, 4, 5))
 console.log(sum(10, 15))
 
-// Operador Spread (...)
+
+
+// ---------- Operador Spread (...) ----------
 
 const numbers = [1, 2, 3]
 function sumWithSpread(a, b, c) {
@@ -76,7 +83,9 @@ function sumWithSpread(a, b, c) {
 console.log(sumWithSpread(1, 2, 3)) // Sin Spread
 console.log(sumWithSpread(...numbers)) // Con Spread
 
-// Closures (Clausuras)
+
+ 
+// ---------- Closures ---------- (Clausuras)
 
 function createCounter() {
     let counter = 0
@@ -92,7 +101,9 @@ counter()
 counter()
 counter()
 
-// Recursividad
+
+
+// ---------- Recursividad ----------
 
 function factorial(n) {
     if (n <= 1) {
@@ -103,7 +114,9 @@ function factorial(n) {
 
 console.log(factorial(5))
 
-// Funciones parciales
+
+
+// ---------- Funciones parciales ----------
 
 function partialSum(a) {
     return function (b, c) {
@@ -115,7 +128,9 @@ const sumWith = partialSum(4) // Fijamos el 4, el resto son variables
 console.log(sumWith(2, 3))
 console.log(sumWith(1, 2))
 
-// Currying
+
+
+// ---------- Currying ----------
 
 function currySum(a) {
     return function (b) {
@@ -133,7 +148,9 @@ console.log(sumC(3))
 console.log(sumC(4))
 console.log(sumAB(5)(7))
 
-// Callbacks
+
+
+// ---------- Callbacks ----------
 
 function processData(data, callback) {
     const result = sum(...data)
