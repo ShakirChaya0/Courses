@@ -1,0 +1,15 @@
+{
+  "name": "mouredev_intermedio",
+  "version": "1.0.0",
+  "main": "00_advanced_functions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
